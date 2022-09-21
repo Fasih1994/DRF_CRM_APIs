@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "dd1e0c61-3553-4777-a7ba-1532106eb7cd",
+		"name": "Manifest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "134692"
+	},
+	"item": [
+		{
+			"name": "getManifest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/m/getManifest",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"m",
+						"getManifest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postManifest",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user_name\": \"testuser\",\n\t\"lines\": [{\n\t\t\"site_name\": \"site1\",\n\t\t\"process_status\": \"\",\n\t\t\"ia_ticket_numbers\": \"123123\",\n\t\t\"order_number\": 0,\n\t\t\"shipment_number\": \"1207215\",\n\t\t\"item_description\": \"laptop\",\n\t\t\"quantity\": 1,\n\t\t\"length\": 0,\n\t\t\"pallet\": \"1\",\n\t\t\"requisition_number\": \"\",\n\t\t\"item_number\": \"test item\",\n\t\t\"height\": 0,\n\t\t\"from_organization_code\": \"xyz\",\n\t\t\"width\": 0,\n\t\t\"source_system\": \"web\",\n\t\t\"job_name\": \"JOB1\",\n\t\t\"shipment_header_id\": 4448063\n\t}],\n\t\"group_name\": \"testuser_group1\",\n\t\"from_organization_code\": \"xyz\",\n\t\"source_system\": \"web\",\n\t\"estimated_ship_date\": \"2022-09-01\",\n\t\"manifest_name\": \"Manifest1\",\n\t\"to_organization_code\": \"abc\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/m/postManifest/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"m",
+						"postManifest",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

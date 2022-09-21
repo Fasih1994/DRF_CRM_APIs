@@ -1,0 +1,83 @@
+{
+    "create": {
+        "user_name": "testuser",
+        "lines": [
+            {
+                "site_name": "site1",
+                "ia_ticket_numbers": "123123",
+                "order_number": 0,
+                "shipment_number": "1207215",
+                "item_description": "laptop",
+                "quantity": 1,
+                "length": 0,
+                "pallet": "1",
+                "requisition_number": "",
+                "item_number": "test item",
+                "height": 0,
+                "from_organization_code": "xyz",
+                "width": 0,
+                "source_system": "web",
+                "job_id": 1,
+                "shipment_header_id": 4448063,
+                "process_status": ""
+            }
+        ],
+        "group_name": "testuser_group1",
+        "from_organization_code": "xyz",
+        "source_system": "web",
+        "estimated_ship_date": "2022-09-01",
+        "manifest_name": "Manifest1",
+        "to_organization_code": "abc"
+    },
+    "update": {
+        "user_name": "testuser",
+        "lines": [
+            {
+                "site_name": "site2",
+                "process_status": "",
+                "ia_ticket_numbers": "123123",
+                "order_number": 0,
+                "shipment_number": "1207215",
+                "item_description": "laptop",
+                "manifest_line_id": 1,
+                "quantity": 1,
+                "length": 0,
+                "pallet": "1",
+                "requisition_number": "",
+                "item_number": "test item",
+                "height": 0,
+                "from_organization_code": "xyz",
+                "width": 0,
+                "source_system": "web",
+                "job_name": "JOB1",
+                "shipment_header_id": 4448063
+            },
+            {
+                "site_name": "site2",
+                "process_status": "",
+                "ia_ticket_numbers": "123123",
+                "order_number": 0,
+                "shipment_number": "1207215",
+                "item_description": "laptop",
+                "quantity": 1,
+                "length": 0,
+                "pallet": "1",
+                "requisition_number": "",
+                "item_number": "test item",
+                "height": 0,
+                "from_organization_code": "xyz",
+                "width": 0,
+                "source_system": "web",
+                "job_name": "JOB1",
+                "shipment_header_id": 4448063
+            }
+        ],
+        "group_name": "testuser_group1",
+        "manifest_id": 1,
+        "from_organization_code": "xyz",
+        "source_system": "web",
+        "estimated_ship_date": "2022-09-01",
+        "manifest_name": "Manifest1",
+        "to_organization_code": "abc"
+    }
+}

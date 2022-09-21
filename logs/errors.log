@@ -1,0 +1,1673 @@
+2022-08-06 23:20:21,679 log               - django.request - line:241  ERROR    Internal Server Error: /m/postManifest
+Traceback (most recent call last):
+  File "/Users/prshah/virtualenvs/connect/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/prshah/virtualenvs/connect/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/Users/prshah/virtualenvs/connect/lib/python3.10/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/prshah/virtualenvs/connect/lib/python3.10/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/m/postManifest/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2022-08-09 11:00:00,278 log               - django.request - line:241  ERROR    Internal Server Error: /api/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/routers.py", line 288, in get
+    ret[key] = reverse(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 721, in _reverse_with_prefix
+    self._populate()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 551, in _populate
+    url_pattern._populate()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 551, in _populate
+    url_pattern._populate()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 530, in _populate
+    bits = normalize(url_pattern.pattern.regex.pattern)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/utils/regex_helper.py", line 159, in normalize
+    count, ch = get_quantifier(ch, pattern_iter)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/utils/regex_helper.py", line 271, in get_quantifier
+    return int(values[0]), ch
+ValueError: invalid literal for int() with base 10: 'pk'
+2022-08-09 11:00:28,387 log               - django.request - line:241  ERROR    Internal Server Error: /api/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/routers.py", line 288, in get
+    ret[key] = reverse(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 721, in _reverse_with_prefix
+    self._populate()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 551, in _populate
+    url_pattern._populate()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 551, in _populate
+    url_pattern._populate()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 530, in _populate
+    bits = normalize(url_pattern.pattern.regex.pattern)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/utils/regex_helper.py", line 159, in normalize
+    count, ch = get_quantifier(ch, pattern_iter)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/utils/regex_helper.py", line 271, in get_quantifier
+    return int(values[0]), ch
+ValueError: invalid literal for int() with base 10: 'pk'
+2022-08-09 11:00:29,425 log               - django.request - line:241  ERROR    Internal Server Error: /api/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/routers.py", line 288, in get
+    ret[key] = reverse(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 721, in _reverse_with_prefix
+    self._populate()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 551, in _populate
+    url_pattern._populate()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 551, in _populate
+    url_pattern._populate()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 530, in _populate
+    bits = normalize(url_pattern.pattern.regex.pattern)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/utils/regex_helper.py", line 159, in normalize
+    count, ch = get_quantifier(ch, pattern_iter)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/utils/regex_helper.py", line 271, in get_quantifier
+    return int(values[0]), ch
+ValueError: invalid literal for int() with base 10: 'pk'
+2022-08-09 11:00:46,990 log               - django.request - line:241  ERROR    Internal Server Error: /api/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/routers.py", line 288, in get
+    ret[key] = reverse(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 721, in _reverse_with_prefix
+    self._populate()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 551, in _populate
+    url_pattern._populate()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 551, in _populate
+    url_pattern._populate()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 530, in _populate
+    bits = normalize(url_pattern.pattern.regex.pattern)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/utils/regex_helper.py", line 159, in normalize
+    count, ch = get_quantifier(ch, pattern_iter)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/utils/regex_helper.py", line 271, in get_quantifier
+    return int(values[0]), ch
+ValueError: invalid literal for int() with base 10: 'int:pk'
+2022-08-09 11:03:51,812 log               - django.request - line:241  ERROR    Internal Server Error: /api/manifestHdr/2/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: retrieve() got multiple values for argument 'pk'
+2022-08-09 11:04:20,094 log               - django.request - line:241  ERROR    Internal Server Error: /api/manifestHdr/2/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 69, in retrieve
+    manifest_hdr = get_object_or_404(self.queryset,pk=pk)
+NameError: name 'pk' is not defined
+2022-08-09 11:04:31,620 log               - django.request - line:241  ERROR    Internal Server Error: /api/manifestHdr/2/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 69, in retrieve
+    manifest_hdr = get_object_or_404(self.queryset)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 653, in get
+    raise self.model.MultipleObjectsReturned(
+manifest.models.MANIFEST.XxyhImsWsManifestHdr.MultipleObjectsReturned: get() returned more than one XxyhImsWsManifestHdr -- it returned 4!
+2022-08-09 11:04:41,163 log               - django.request - line:241  ERROR    Internal Server Error: /api/manifestHdr/1/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 69, in retrieve
+    manifest_hdr = get_object_or_404(self.queryset)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 653, in get
+    raise self.model.MultipleObjectsReturned(
+manifest.models.MANIFEST.XxyhImsWsManifestHdr.MultipleObjectsReturned: get() returned more than one XxyhImsWsManifestHdr -- it returned 4!
+2022-08-09 11:42:08,600 log               - django.request - line:241  ERROR    Internal Server Error: /api/manifestLns/1/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 88, in retrieve
+    serializer = self.serializer_class(instance=manifest_hdr)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/base.py", line 585, in __init__
+    raise TypeError(
+TypeError: XxyhImsWsManifestLns() got unexpected keyword arguments: 'instance'
+2022-08-09 11:42:14,815 log               - django.request - line:241  ERROR    Internal Server Error: /api/manifestLns/2/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 88, in retrieve
+    serializer = self.serializer_class(instance=manifest_hdr)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/base.py", line 585, in __init__
+    raise TypeError(
+TypeError: XxyhImsWsManifestLns() got unexpected keyword arguments: 'instance'
+2022-08-09 11:45:50,356 log               - django.request - line:241  ERROR    Internal Server Error: /api/manifestLns/2/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 91, in retrieve
+    data={'headers':[serializer.data]},
+AttributeError: 'XxyhImsWsManifestLns' object has no attribute 'data'
+2022-08-09 18:10:49,338 log               - django.request - line:241  ERROR    Internal Server Error: /api/postManifest/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 131, in put
+    return self.update(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 65, in update
+    instance = self.get_object()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/generics.py", line 88, in get_object
+    assert lookup_url_kwarg in self.kwargs, (
+AssertionError: Expected view ManifestHdrLnsPostView to be called with a URL keyword argument named "pk". Fix your URL conf, or set the `.lookup_field` attribute on the view correctly.
+2022-08-10 10:05:54,042 log               - django.request - line:241  ERROR    Internal Server Error: /api/manifestLns/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/renderers.py", line 702, in get_context
+    'filter_form': self.get_filter_form(data, view, request),
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/renderers.py", line 634, in get_filter_form
+    html = backend().to_html(request, queryset, view)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django_filters/rest_framework/backends.py", line 81, in to_html
+    template = loader.get_template(self.template)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: django_filters/rest_framework/form.html
+2022-08-10 10:05:59,764 log               - django.request - line:241  ERROR    Internal Server Error: /api/manifestLns/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/renderers.py", line 702, in get_context
+    'filter_form': self.get_filter_form(data, view, request),
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/renderers.py", line 634, in get_filter_form
+    html = backend().to_html(request, queryset, view)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django_filters/rest_framework/backends.py", line 81, in to_html
+    template = loader.get_template(self.template)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: django_filters/rest_framework/form.html
+2022-08-10 10:06:02,838 log               - django.request - line:241  ERROR    Internal Server Error: /api/manifestLns/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/renderers.py", line 702, in get_context
+    'filter_form': self.get_filter_form(data, view, request),
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/renderers.py", line 634, in get_filter_form
+    html = backend().to_html(request, queryset, view)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django_filters/rest_framework/backends.py", line 81, in to_html
+    template = loader.get_template(self.template)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: django_filters/rest_framework/form.html
+2022-08-10 10:52:05,300 log               - django.request - line:241  ERROR    Internal Server Error: /api/deleteManifestLns/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 45, in list
+    serializer = self.get_serializer(queryset, many=True)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/generics.py", line 108, in get_serializer
+    serializer_class = self.get_serializer_class()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/generics.py", line 122, in get_serializer_class
+    assert self.serializer_class is not None, (
+AssertionError: 'ManifestLnsDelView' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+2022-08-10 10:53:01,176 log               - django.request - line:241  ERROR    Internal Server Error: /api/deleteManifestLns/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/utils/datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'manifest_line_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 165, in delete
+    manifest_line_id = request.data['manifest_line_id']
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/utils/datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'manifest_line_id'
+2022-08-10 11:30:00,403 log               - django.request - line:241  ERROR    Internal Server Error: /api/manifestHdr/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/renderers.py", line 702, in get_context
+    'filter_form': self.get_filter_form(data, view, request),
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/renderers.py", line 634, in get_filter_form
+    html = backend().to_html(request, queryset, view)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django_filters/rest_framework/backends.py", line 81, in to_html
+    template = loader.get_template(self.template)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: django_filters/rest_framework/form.html
+2022-08-10 12:40:09,110 log               - django.request - line:241  ERROR    Internal Server Error: /api/deleteManifestLns/16/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 190, in destroy
+    hdr = XxyhImsWsManifestHdr.objects.get()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 653, in get
+    raise self.model.MultipleObjectsReturned(
+manifest.models.MANIFEST.XxyhImsWsManifestHdr.MultipleObjectsReturned: get() returned more than one XxyhImsWsManifestHdr -- it returned 5!
+2022-08-10 12:42:16,781 log               - django.request - line:241  ERROR    Internal Server Error: /api/deleteManifestLns/16/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 193, in destroy
+    if len(lines)> 1:
+NameError: name 'lines' is not defined
+2022-08-10 12:43:16,060 log               - django.request - line:241  ERROR    Internal Server Error: /api/deleteManifestLns/16/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+2022-08-10 12:45:25,813 log               - django.request - line:241  ERROR    Internal Server Error: /api/deleteManifestLns/21/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 190, in destroy
+    hdr = XxyhImsWsManifestHdr.objects.get(manifes_id=line.manifest_id)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 636, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1420, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1438, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1445, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1407, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1217, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1709, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'manifes_id' into field. Choices are: actual_ship_date, airway_bill, creation_date, error_code, error_fields, error_message, estimated_ship_date, from_organization_code, from_organization_id, group_id, group_name, last_update_date, manifest_id, manifest_name, process_status, seal, ship_from_name, ship_to_name, source_system, to_organization_code, to_organization_id, user_id, user_name
+2022-08-10 12:46:01,165 log               - django.request - line:241  ERROR    Internal Server Error: /api/deleteManifestLns/21/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 191, in destroy
+    lines = hdr.get_all_lines()
+AttributeError: 'XxyhImsWsManifestHdr' object has no attribute 'get_all_lines'
+2022-08-10 12:46:31,317 log               - django.request - line:241  ERROR    Internal Server Error: /api/deleteManifestLns/21/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 191, in destroy
+    lines = hdr.all_lines
+AttributeError: 'XxyhImsWsManifestHdr' object has no attribute 'all_lines'
+2022-08-10 12:46:59,290 log               - django.request - line:241  ERROR    Internal Server Error: /api/deleteManifestLns/21/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+2022-08-10 12:52:01,176 log               - django.request - line:241  ERROR    Internal Server Error: /api/deleteManifestLns/21/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+2022-08-10 12:52:57,127 log               - django.request - line:241  ERROR    Internal Server Error: /api/deleteManifestLns/21/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+2022-08-10 12:53:31,582 log               - django.request - line:241  ERROR    Internal Server Error: /api/deleteManifestLns/21/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+2022-08-10 12:54:07,200 log               - django.request - line:241  ERROR    Internal Server Error: /api/deleteManifestLns/21/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 193, in destroy
+    print(len(sz.get_all_lines()))
+TypeError: get_all_lines() missing 1 required positional argument: 'instance'
+2022-08-10 12:54:30,973 log               - django.request - line:241  ERROR    Internal Server Error: /api/deleteManifestLns/21/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+2022-08-10 12:55:29,866 log               - django.request - line:241  ERROR    Internal Server Error: /api/deleteManifestLns/16/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 196, in destroy
+    return self.perform_destroy()
+TypeError: perform_destroy() missing 1 required positional argument: 'instance'
+2022-08-10 12:56:17,295 log               - django.request - line:241  ERROR    Internal Server Error: /api/deleteManifestLns/16/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+2022-08-12 11:22:00,221 log               - django.request - line:241  ERROR    Internal Server Error: /api/deleteManifest
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 175, in post
+    hdr = XxyhImsWsManifestHdr.objects.get(manifest_id=line.manifest_id)
+NameError: name 'line' is not defined
+2022-08-12 12:51:40,728 log               - django.request - line:241  ERROR    Internal Server Error: /api/postManifest/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 137, in create
+    instance = self.perform_create()
+TypeError: perform_create() missing 1 required positional argument: 'serializer'
+2022-08-12 12:52:11,865 log               - django.request - line:241  ERROR    Internal Server Error: /api/postManifest/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 137, in create
+    instance = self.perform_create(self.serializer_class)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+TypeError: save() missing 1 required positional argument: 'self'
+2022-08-12 12:53:00,716 log               - django.request - line:241  ERROR    Internal Server Error: /api/postManifest/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 137, in create
+    instance = self.perform_create(self.serializer_class)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+TypeError: save() missing 1 required positional argument: 'self'
+2022-08-12 13:34:45,180 log               - django.request - line:241  ERROR    Internal Server Error: /api/manifest/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 50, in list
+    return paginator.get_paginated_response('maniest_hdr', serializer.data, user_name, inquiry_id)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 507, in to_representation
+    for field in fields:
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `all_lines` is not valid for model `XxyhImsWsManifestHdr`.
+2022-08-12 16:18:59,779 log               - django.request - line:241  ERROR    Internal Server Error: /api/postManifest/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/oracle/base.py", line 556, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+cx_Oracle.DatabaseError: ORA-00942: table or view does not exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 139, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 485, in to_internal_value
+    validated_value = validate_method(validated_value)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_serializers.py", line 47, in validate_manifest_name
+    if d:
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 408, in __bool__
+    self._fetch_all()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/oracle/base.py", line 556, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+django.db.utils.DatabaseError: ORA-00942: table or view does not exist
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 146, in create
+    'message': serializer.errors
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 560, in errors
+    ret = super().errors
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 264, in errors
+    raise AssertionError(msg)
+AssertionError: You must call `.is_valid()` before accessing `.errors`.
+2022-08-17 03:00:53,316 log               - django.request - line:241  ERROR    Internal Server Error: /api/postManifest/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 142, in post
+    serializer = self.serializer_class(data=data)
+AttributeError: 'ManifestHdrLnsPostView' object has no attribute 'serializer_class'
+2022-08-17 03:14:45,848 log               - django.request - line:241  ERROR    Internal Server Error: /api/postManifest/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/oracle/base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+cx_Oracle.DatabaseError: ORA-00942: table or view does not exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_serializers.py", line 65, in create
+    job = XxyhJobs.objects.get(job_id = line['job_id'])
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 492, in get
+    num = len(clone)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 302, in __len__
+    self._fetch_all()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/oracle/base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+django.db.utils.DatabaseError: ORA-00942: table or view does not exist
+2022-08-17 03:16:25,018 log               - django.request - line:241  ERROR    Internal Server Error: /api/postManifest/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/oracle/base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+cx_Oracle.DatabaseError: ORA-00942: table or view does not exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_serializers.py", line 65, in create
+    job = XxyhJobs.objects.get(job_id = line['job_id'])
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 492, in get
+    num = len(clone)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 302, in __len__
+    self._fetch_all()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/oracle/base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+django.db.utils.DatabaseError: ORA-00942: table or view does not exist
+2022-08-17 03:43:25,778 log               - django.request - line:241  ERROR    Internal Server Error: /api/postManifest/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 657, in get_or_create
+    return self.get(**kwargs), False
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+manifest.models.MANIFEST.XxyhImsWsManifestLns.DoesNotExist: XxyhImsWsManifestLns matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/oracle/base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+cx_Oracle.IntegrityError: ORA-00001: unique constraint (C##MYUSER.SYS_C007770) violated
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_serializers.py", line 70, in create
+    sz.save()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 731, in save
+    self.instance = self.create(validated_data)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 703, in create
+    return [
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 704, in <listcomp>
+    self.child.create(attrs) for attrs in validated_data
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_serializers.py", line 17, in create
+    instance, created = XxyhImsWsManifestLns.objects.update_or_create(**validated_data)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 684, in update_or_create
+    obj, created = self.select_for_update().get_or_create(defaults, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 664, in get_or_create
+    return self.create(**params), True
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/utils/db_utils/common.py", line 57, in wrapper
+    return model_save_func(obj, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/models/MANIFEST.py", line 105, in save
+    super().save(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/base.py", line 806, in save
+    self.save_base(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/base.py", line 857, in save_base
+    updated = self._save_table(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/oracle/base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+django.db.utils.IntegrityError: ORA-00001: unique constraint (C##MYUSER.SYS_C007770) violated
+2022-08-17 04:26:03,884 log               - django.request - line:241  ERROR    Internal Server Error: /api/postManifest/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 146, in post
+    manifest_sz.is_valid(raise_exception=True)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 479, in to_internal_value
+    for field in fields:
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 362, in _writable_fields
+    for field in self.fields.values():
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `lines` is not valid for model `XxyhImsWsManifestHdr`.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 152, in post
+    'message': manifest_sz.errors
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 560, in errors
+    ret = super().errors
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 264, in errors
+    raise AssertionError(msg)
+AssertionError: You must call `.is_valid()` before accessing `.errors`.
+2022-08-17 04:27:15,002 log               - django.request - line:241  ERROR    Internal Server Error: /api/manifest/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 52, in list
+    return paginator.get_paginated_response('maniest_hdr', serializer.data, user_name, inquiry_id)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 507, in to_representation
+    for field in fields:
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `lines` is not valid for model `XxyhImsWsManifestHdr`.
+2022-08-17 05:12:16,240 log               - django.request - line:241  ERROR    Internal Server Error: /api/manifest/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 52, in list
+    return paginator.get_paginated_response('maniest_hdr', serializer.data, user_name, inquiry_id)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 507, in to_representation
+    for field in fields:
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `lines` is not valid for model `XxyhImsWsManifestHdr`.
+2022-08-17 06:16:56,986 log               - django.request - line:241  ERROR    Internal Server Error: /api/postManifest/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/oracle/base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+cx_Oracle.DatabaseError: ORA-00942: table or view does not exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 160, in post
+    job = XxyhJobs.objects.get(job_id = line['job_id'])
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 492, in get
+    num = len(clone)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 302, in __len__
+    self._fetch_all()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/oracle/base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+django.db.utils.DatabaseError: ORA-00942: table or view does not exist
+2022-08-17 06:18:11,879 log               - django.request - line:241  ERROR    Internal Server Error: /api/postManifest/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/oracle/base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+cx_Oracle.DatabaseError: ORA-00942: table or view does not exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 160, in post
+    job = XxyhJobs.objects.get(job_id = line['job_id'])
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 492, in get
+    num = len(clone)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 302, in __len__
+    self._fetch_all()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/oracle/base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+django.db.utils.DatabaseError: ORA-00942: table or view does not exist
+2022-08-17 06:19:21,428 log               - django.request - line:241  ERROR    Internal Server Error: /api/postManifest/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/oracle/base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+cx_Oracle.DatabaseError: ORA-00942: table or view does not exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 160, in post
+    job = XxyhJobs.objects.get(job_id = line['job_id'])
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 492, in get
+    num = len(clone)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 302, in __len__
+    self._fetch_all()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/oracle/base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+django.db.utils.DatabaseError: ORA-00942: table or view does not exist
+2022-08-17 06:23:26,436 log               - django.request - line:241  ERROR    Internal Server Error: /api/postManifest/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/oracle/base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+cx_Oracle.DatabaseError: ORA-00942: table or view does not exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 160, in post
+    job = XxyhJobs.objects.get(job_id = line['job_id'])
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 492, in get
+    num = len(clone)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 302, in __len__
+    self._fetch_all()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/oracle/base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+django.db.utils.DatabaseError: ORA-00942: table or view does not exist
+2022-08-17 06:26:30,117 log               - django.request - line:241  ERROR    Internal Server Error: /api/postManifest/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/oracle/base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+cx_Oracle.DatabaseError: ORA-00942: table or view does not exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 160, in post
+    job = XxyhJobs.objects.get(job_id = line['job_id'])
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 492, in get
+    num = len(clone)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 302, in __len__
+    self._fetch_all()
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/backends/oracle/base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+django.db.utils.DatabaseError: ORA-00942: table or view does not exist
+2022-08-17 07:28:00,572 log               - django.request - line:241  ERROR    Internal Server Error: /api/postManifest/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 150, in post
+    manifest_sz.is_valid(raise_exception=True)
+UnboundLocalError: local variable 'manifest_sz' referenced before assignment
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 166, in post
+    'message': manifest_sz.errors
+UnboundLocalError: local variable 'manifest_sz' referenced before assignment
+2022-08-17 09:41:46,189 log               - django.request - line:241  ERROR    Internal Server Error: /api/postManifest/
+Traceback (most recent call last):
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/drf_apis/manifest/manifest_views.py", line 178, in post
+    job = XxyhJobs.objects.get(job_id = line['job_id'])
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/fasih/Downloads/Compressed/drf_apis-20220807T140814Z-001/venv/lib/python3.8/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+manifest.models.MANIFEST.XxyhJobs.DoesNotExist: XxyhJobs matching query does not exist.

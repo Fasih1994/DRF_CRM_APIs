@@ -1,0 +1,203 @@
+Models:
+	XxyhImsWsManifestHdr (Parent)
+		Unique field: manifest_name
+		Composite Unique fields: from_organization_code, to_organization_code, process_status, airway_bill
+			airway_bill can be null
+
+	XxyhImsWsManifestLns (Child)
+	XxyhJobs (Independent)
+
+
+1) GET APIS
+
+-- All date parameters to support GTE, LTE, GT, LT
+== All string parameters to be case insensitive
+
+GET /getManifest
+	Query Parameters:
+		All Fields of XxyhImsWsManifestHdr & XxyhImsWsManifestLns
+
+	Logic for query parameter:
+		If field of XxyhImsWsManifestLns is part of query parameter then first filter model XxyhImsWsManifestLns to get all manifest_id and then return all XxyhImsWsManifestHdr w.r.t the list of manifest_ids found by filtering XxyhImsWsManifestLns
+
+		
+	Query Parameters:
+		All fields of both models
+
+	Response structure:
+		{
+			"headers" : [{
+				"manifest_id": 1,
+				"manifest_name": "manifest1"
+				<<ALL FIELDS FROM XxyhImsWsManifestHdr>>
+				"last_update_date": "01-JAN-2020",
+				"lines": [{
+					"manifes_line_id": 1,
+					"manifest_id": 1,
+					<<ALL FIELDS FROM XxyhImsWsManifestLns>>
+					"last_update_date": "05-JAN-2020",
+				}]
+			}]
+		}
+
+EXAMPLE:
+get /manifest?item_number=abc&from_organization_code=xyz
+	1) Filter XxyhImsWsManifestLns for item_number=abc and collect all manifest_id from the results
+	2) Filter XxyhImsWsManifestHdr for manifest_id based on 1 and from_organization_code=xyz
+	3) Return the response based on response structure above
+
+
+GET /manifestHdr/1/
+	Query Parameters:
+		All Fields of XxyhImsWsManifestHdr
+
+	Logic for query parameter:
+		Return all XxyhImsWsManifestHdr by filtering the mmodel based on all query parameters
+
+		
+	Query Parameters:
+		All fields of XxyhImsWsManifestHdr
+
+	Response structure:
+		{
+			"headers" : [{
+				"manifest_id": 1,
+				"manifest_name": "manifest1"
+				<<ALL FIELDS FROM XxyhImsWsManifestHdr>>
+				"last_update_date": "01-JAN-2020"
+			}]
+		}
+	
+
+GET /manifestLns
+	Query Parameters:
+		All Fields of XxyhImsWsManifestLns
+
+	Logic for query parameter:
+		Return all XxyhImsWsManifestLns by filtering the mmodel based on all query parameters
+
+		
+	Query Parameters:
+		All fields of XxyhImsWsManifestLns
+
+	Response structure:
+		{
+			"lines" : [{
+				"manifes_line_id": 1,
+				"manifest_id": 1,
+				<<ALL FIELDS FROM XxyhImsWsManifestLns>>
+				"last_update_date": "05-JAN-2020",
+				}]
+		}
+
+
+2) POST APIS
+
+	/postManifest
+
+	Body for create:
+
+	{ "user_name" : "testuser",
+	  "lines" : [
+	    {
+	      "site_name" : "site1",
+	      "process_status" : "",
+	      "ia_ticket_numbers" : "123123",
+	      "order_number" : 0,
+	      "shipment_number" : "1207215",
+	      "item_description" : "laptop",
+	      "quantity" : 1,
+	      "length" : 0,
+	      "pallet" : "1",
+	      "requisition_number" : "",
+	      "item_number" : "test item",
+	      "height" : 0,
+	      "from_organization_code" : "xyz",
+	      "width" : 0,
+	      "source_system" : "web",
+	      "job_name" : "JOB1",
+	      "shipment_header_id" : 4448063
+	    }
+	  ],
+	  "group_name" : "testuser_group1",
+	  "from_organization_code" : "xyz",
+	  "source_system" : "web",
+	  "estimated_ship_date" : "2022-09-01",
+	  "manifest_name" : "Manifest1",
+	  "to_organization_code" : "abc",
+	}
+
+	Body for update:
+
+	{ "user_name" : "testuser",
+	  "lines" : [
+	    {
+	      "site_name" : "site2",
+	      "process_status" : "",
+	      "ia_ticket_numbers" : "123123",
+	      "order_number" : 0,
+	      "shipment_number" : "1207215",
+	      "item_description" : "laptop",
+	      "manifest_line_id" : 1,
+	      "quantity" : 1,
+	      "length" : 0,
+	      "pallet" : "1",
+	      "requisition_number" : "",
+	      "item_number" : "test item",
+	      "height" : 0,
+	      "from_organization_code" : "xyz",
+	      "width" : 0,
+	      "source_system" : "web",
+	      "job_name" : "JOB1",
+	      "shipment_header_id" : 4448063
+	    },
+	    {
+	      "site_name" : "site2",
+	      "process_status" : "",
+	      "ia_ticket_numbers" : "123123",
+	      "order_number" : 0,
+	      "shipment_number" : "1207215",
+	      "item_description" : "laptop",
+	      "quantity" : 1,
+	      "length" : 0,
+	      "pallet" : "1",
+	      "requisition_number" : "",
+	      "item_number" : "test item",
+	      "height" : 0,
+	      "from_organization_code" : "xyz",
+	      "width" : 0,
+	      "source_system" : "web",
+	      "job_name" : "JOB1",
+	      "shipment_header_id" : 4448063
+	    }
+	  ],
+	  "group_name" : "testuser_group1",
+	  "manifest_id" : 1,
+	  "from_organization_code" : "xyz",
+	  "source_system" : "web",
+	  "estimated_ship_date" : "2022-09-01",
+	  "manifest_name" : "Manifest1",
+	  "to_organization_code" : "abc",
+	}
+
+	Logic create or update all manifest header and lines. If ids exits, record should be updated, if id do not exist, the record should be created.
+	Unique key violation should result in data error.
+	If job_name is passed in lines, job_id should be fetched by filtering XxyhJobs model and stored in XxyhImsWsManifestLns model.
+
+
+	/deleteManifest
+	delete manifest hdr & line or only line
+
+	Post Body:
+		{
+			"manifest_id": 1
+		}
+
+	/deleteManifestLns
+	delete manifest line
+
+	Post Body:
+		{
+			"manifest_line_id": 1
+		}
+
